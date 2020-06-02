@@ -1,4 +1,4 @@
-package com.example.testprogs.utils;
+package com.example.testprogs.algos.utils;
 
 import org.codehaus.jackson.JsonNode;
 import org.codehaus.jackson.annotate.JsonAutoDetect;

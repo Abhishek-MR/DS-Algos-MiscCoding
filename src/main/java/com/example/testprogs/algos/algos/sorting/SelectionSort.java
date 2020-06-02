@@ -1,8 +1,8 @@
-package com.example.testprogs.algos.sorting;
+package com.example.testprogs.algos.algos.sorting;
 
 import java.util.Scanner;
 
-public class BubbleSort {
+public class SelectionSort {
 
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
@@ -14,8 +14,8 @@ public class BubbleSort {
         for (int i = 0; i < n; i++) {
             a[i]=s.nextInt();
         }
-        BubbleSort bubbleSort = new BubbleSort();
-        bubbleSort.sort(a);
+        SelectionSort selectionSort = new SelectionSort();
+        selectionSort.sort(a);
         System.out.println("Sorted");
         for (int i: a) {
             System.out.print(i+"\t");
@@ -23,14 +23,18 @@ public class BubbleSort {
     }
 
     public void sort(int[] a) {
-        for (int i = 0; i < a.length -1; i++) {
-            for(int j=0; j<a.length - i -1; j++) {
-                if(a[j] > a[j+1]) {
-                    int temp = a[j+1];
-                    a[j+1] = a[j];
-                    a[j] = temp;
+
+        for (int i = 0; i < a.length; i++) {
+            int min = i;
+
+            for (int j = i; j<a.length;j++) {
+                if(a[j] < a[min]) {
+                    min = j;
                 }
             }
+            int temp = a[min];
+            a[min] = a[i];
+            a[i] = temp;
         }
     }
 }

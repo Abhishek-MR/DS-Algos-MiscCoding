@@ -1,12 +1,14 @@
-package com.example.testprogs.testcodes;
+package com.example.testprogs.algos.platforms.leetcode;
 
 import com.example.testprogs.utils.Utils;
-import sun.rmi.runtime.Log;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.logging.Logger;
 
-public class ThreeSumLeetCode {
+public class LeetCodeThreeSum {
 
     public int[] twosum(int[] nums, int target, int ignore) throws IllegalArgumentException{
         Map<Integer,Integer> compmap = new HashMap<>();
@@ -36,7 +38,7 @@ public class ThreeSumLeetCode {
     }
 
     public static void main(String[] args) {
-        ThreeSumLeetCode t = new ThreeSumLeetCode();
+        LeetCodeThreeSum t = new LeetCodeThreeSum();
         System.out.println(Utils.objToJsonPrettyStr(t.threeSum(new int[]{-1, 0, 1, 2, -1, -4}), Logger.getGlobal()));
     }
 }

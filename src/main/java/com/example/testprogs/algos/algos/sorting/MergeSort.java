@@ -1,4 +1,4 @@
-package com.example.testprogs.algos.sorting;
+package com.example.testprogs.algos.algos.sorting;
 
 import java.util.Arrays;
 import java.util.Scanner;

@@ -1,10 +1,10 @@
-package com.example.testprogs.testcodes;
+package com.example.testprogs.algos.platforms.leetcode;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TwoSumLeetCode {
+public class LeetCodeTwoSum {
 
     public static int[] twoSum(int[] nums, int target) {
         Map<Integer,Integer> compmap = new HashMap<>();
